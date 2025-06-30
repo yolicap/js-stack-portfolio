@@ -6,9 +6,11 @@ const ejs = require('ejs');
 const people = ['geddy', 'neil', 'alex'];
 const html = ejs.render('<%= people.join(", "); %>', {people: people});
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
+app.set("view engine", "ejs");
+
+app.get("/", (req, res) => {
+    res.render("index", {title: "Home"});
+});
 
 app.post('/', (req, res) => {
     res.send('Got a POST request')

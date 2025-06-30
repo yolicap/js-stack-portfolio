@@ -2,7 +2,7 @@
   "name": "js-stack-portfolio",
   "version": "1.0.0",
   "description": "personal portfolio using a javascript stack",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "na"
   },
@@ -13,10 +13,11 @@
   "keywords": [
     "na"
   ],
-  "author": "melonflesh@yolicap",
+  "author": "yolicap",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^5.1.0"
-  }
+  },
+  "devDependencies": {}
 }
