@@ -1,14 +1,25 @@
-<nav>
-    <div class="nav-container">
-        <div class="site-title">
-            <a href="/" class="title" style="text-decoration: none; color: black;"></a>
-        </div>
-        <div class="nav-menu">
-                <a class="navbar-text" href="/" style="text-decoration: none; color: black">Home</a>
-                <a class="navbar-text" href="/about" style="text-decoration: none; color: black">About</a>
-                <a class="navbar-text" href="/photos" style="text-decoration: none; color: black">Photos</a>
-                <a class="navbar-text" href="/projects" style="text-decoration: none; color: black">Projects</a>
-        </div>
-        <%- include("./styles.html") %>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav center">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">/<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/portfolio">/portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/cv">/cv</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/photography">/photography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/blog">/blog</a>
+            </li>
+        </ul>
     </div>
 </nav>

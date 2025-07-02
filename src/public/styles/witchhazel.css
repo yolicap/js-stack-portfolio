@@ -1,0 +1,154 @@
+:root {
+    /* colors as defined in witchhazel */
+    --background-color: #433E56;
+    --caret-color: #F8F8F0;
+    --foreground-color: #F8F8F2;
+    --invisibles-color: #A8757B;
+    --line-highlight-color: #716799;
+    --selection-color: #8077A8;
+
+    --comment-foreground-color: #B0BEC5;
+    --string-foreground-color: #1BC5E0;
+    --number-foreground-color: #C5A3FF;
+    --constant-foreground-color: #C5A3FF;
+    --user-defined-constant-foreground-color: #C5A3FF;
+    --variable-foreground-color: #F8F8F2;
+    --keyword-foreground-color: #C2FFDF;
+
+    --storage-fontstyle: ;
+    --storage-foreground-color: #FFB8D1;
+
+    --storage-type-fontstyle: italic;
+    --storage-type-foreground-color: #C2FFDF;
+
+    --class-name-fontstyle: underline;
+    --class-name-foreground-color: #FFF352;
+
+    --inherited-class-fontstyle: italic;
+    --inherited-class-foreground-color: #FFF352;
+    
+    --function-name-fontstyle: ;
+    --function-name-foreground-color: #CEB1FF;
+
+    --function-argument-fontstyle: ;
+    --function-argument-foreground-color: #FF857F;
+
+    --tag-name-fontstyle : ;
+    --tag-name-foreground-color: #FFB8D1;
+
+    --tag-attribute-fontstyle: ;
+    --tag-attribute-foreground-color: #FFF352;
+
+    --library-function-fontstyle: ;
+    --library-function-foreground-color: #C2FFDF;
+
+    --library-constant-fonstyle: ;
+    --library-constant-foreground-color: #C2FFDF;
+
+    --library-class-type-fontstyle: italic;
+    --library-class-type-foreground-color: #C2FFDF;
+
+    --library-variable-fontstyle: ;
+
+    --invalid-background-color: #F92672;
+    --invalid-fontstyle: ;
+    --invalid-foreground-color: #F8F8F0;
+
+    --invalid-deprecated-background-color: #AE81FF;
+    --invalid-deprecated-foreground-color: #F8F8F0;
+
+    /* forget markdown for now. girl im tired */
+
+    --witchhazel-text-primary: var(--foreground-color);
+    --witchhazel-text-secondary: var(--function-name-foreground-color);
+    --witchhazel-text-muted: var(--comment-foreground-color);
+}
+
+/*-- css classes --*/
+
+
+/* -- bootstrap translations --*/
+
+.text-primary {
+    color: var(--witchhazel-text-primary) !important;
+}
+.text-secondary {
+    color: var(--witchhazel-text-secondary) !important;
+}
+/* text-success */
+/* text-danger */
+/* text-warning */
+/* text-info */
+/* text-light */
+/* text-dark */
+.text-muted {
+    color: var(--witchhazel-text-muted) !important;
+}
+/* text-white */
+
+/* 
+.bg-primary {
+    background-color: var(--background-color);
+}
+.bg-secondary {
+    background-color: var();
+} */
+/* .bg-success */
+/* .bg-danger */
+/* .bg-warning */
+/* .bg-info */
+.bg-light {
+    background-color: var(--background-color) !important;
+    /* background-color: #433E56 !important; */
+}
+.bg-dark {
+    background-color: var(--background-color) !important;
+}
+/* .bg-white */
+
+/* --- niche changes --- */
+.navbar-light .navbar-brand  {
+  color: var(--witchhazel-text-primary);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--witchhazel-text-primary);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--witchhazel-text-secondary);
+}
+
+.navbar-light .navbar-nav .active > .nav-link{
+    color: var(--witchhazel-text-secondary);
+}
+
+.navbar-light .navbar-brand:hover {
+    color: var(--witchhazel-text-secondary);
+}
+
+.center {
+    margin: auto;
+    /* width: 50%; */
+    /* border: 3px solid green; */
+    /* padding: 10px; */
+}
+
+.navbar {
+    font-size: 1.5rem;
+}
+
+/* .navbar-light {
+    color: var(--foreground-color) !important;
+} */
+
+/* .nav-link:hover {
+  color: rgba(0,0,0,.7);
+} */
+
+.content {
+    margin-bottom: 1rem;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 0;
+}
