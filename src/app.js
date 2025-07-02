@@ -17,7 +17,27 @@ app.post('/', (req, res) => {
     res.send('Got a POST request')
 })
 
+app.get('/blog', (req, res) => {
+    res.render("base", {content: "./partials/blog-content.ejs", title: "blog", posts: get_posts()});
+})
+
+app.get("/blog/:postId", (req, res) => {
+  const requestedId = _.toString(req.params.postId);
+  Post.findOne({_id: requestedId}, (err, post) => {
+    res.render('blog-post', {postTitle: post.postTitle, postBody: post.postBody})
+  })
+})
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+// function get_posts(){
+//   posts = []
+//   for 
+// }
+
+// class post {
+
+// }

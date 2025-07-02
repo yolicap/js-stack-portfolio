@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col">
+        <ul>
+            <% posts.forEach(function(post) { %>
+                <li>
+                    <a href="/blog/<%= post.tag %>" > <%= post.title %> </a>
+                    <p>published: date, last edited: date</p>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</div>

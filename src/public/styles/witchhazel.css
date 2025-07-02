@@ -61,6 +61,7 @@
 
     --witchhazel-text-primary: var(--foreground-color);
     --witchhazel-text-secondary: var(--function-name-foreground-color);
+    --witchhazel-text-info: var(--class-name-foreground-color);
     --witchhazel-text-muted: var(--comment-foreground-color);
 }
 
@@ -78,7 +79,9 @@
 /* text-success */
 /* text-danger */
 /* text-warning */
-/* text-info */
+.text-info {
+    color: var(--witchhazel-text-info) !important;
+}
 /* text-light */
 /* text-dark */
 .text-muted {
@@ -148,7 +151,7 @@
 
 .content {
     margin-bottom: 1rem;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 0;
 }
